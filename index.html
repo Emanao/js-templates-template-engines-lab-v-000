@@ -45,12 +45,8 @@
 
     <script id="post-template" type="text/x-lodash-template">
         <article>
-            <header>
-                <%- title %>
-            </header>
-            <p>
-                <%- text %>
-            </p>
+            <header><%- title %></header>
+            <p><%- text %></p>
             <footer>
                 <span class="posted-by">Posted By: </span>
                 <%- author %>
@@ -80,9 +76,7 @@
 
     <script id="comment-template" type="text/x-lodash-template">
       <article>
-          <p>
-              <%- comment %>
-          </p>
+          <p><%- comment %></p>
           <footer>
               <span class="posted-by">Posted By: </span>
               <%- commenter %>
