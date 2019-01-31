@@ -8,11 +8,23 @@
 <body>
     <main>
         <form id="post-form" onsubmit="createPost(); return false;">
-            Title: <input type="text" id="postTitle"></br>
-            Content: <textarea id="postText"></textarea>
-            </br>
-            Author: <input type="text" id="postAuthor"></br>
-            <input type="submit">
+          <table>
+            <tbody>
+              <tr>
+                <td>Title:</td>
+                <td><input type="text" id="postTitle"></br></td>
+              </tr>
+              <tr>
+                <td>Content:</td>
+                <td><textarea id="postText"></textarea></td>
+              </tr>
+              <tr>
+                <td>Author:</td>
+                <td><input type="text" id="postAuthor"></td>
+              </tr>
+                <input type="submit">
+            </tbody>
+          </table>
         </form>
     </main>
     <script src="node_modules/lodash/lodash.min.js"></script>
