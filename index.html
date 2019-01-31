@@ -22,9 +22,7 @@
                 <td>Author:</td>
                 <td><input type="text" id="postAuthor"></td>
               </tr>
-              <tr>
-                <td><input type="submit"></td>
-              </tr>
+              <tr><td><input type="submit"></td></tr>
             </tbody>
           </table>
         </form>
@@ -63,25 +61,21 @@
     <script id="comments-template" type="text/x-lodash-template">
         <div id="comments">
             <form onsubmit="postComment();return false;">
-            <table>
-              <tbody>
-                <tr>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                </tr>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>Name:</td>
+                    <td><input type="text" id="commenter"></td>
+                  </tr>
+                  <tr>
+                    <td>Comment:</td>
+                    <td><input type="text" id="commentText"></td>
+                  </tr>
+                  <tr><td><input type="submit"></td></tr>
                 </tbody>
-                </table>
-                Name: <input type="text" id="commenter"><br> Comment: <input type="text" id="commentText"><br>
-                <input type="submit">
+              </table>
             </form>
         </div>
-
     </script>
 
     <script id="comment-template" type="text/x-lodash-template">
